@@ -1,0 +1,16 @@
+{
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "./src/Pages/Landing/LandingPage.jsx"
+      },
+      {
+        "source": "/404",
+        "destination": "./src/Pages/404-Page/404.jsx"
+      },
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
+    ]
+  }
