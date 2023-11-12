@@ -14,7 +14,6 @@ const LandingPage = () => {
 
   useEffect(() => {
     const images = document.querySelectorAll(".image");
-    const textSlider = document.querySelector(".text-group");
     const bullets = document.querySelectorAll(".bullets span");
 
     images.forEach((img, index) => {
@@ -24,8 +23,6 @@ const LandingPage = () => {
         img.classList.remove("show");
       }
     });
-
-    textSlider.style.transform = `translateY(${-(activeSlide - 1) * 2.2}rem)`;
 
     bullets.forEach((bull, index) => {
       if (index + 1 === activeSlide) {
@@ -119,19 +116,6 @@ const LandingPage = () => {
                 exit={{ opacity: 0, scale: 0.5 }}
               />
             </div>
-            <div className="text-slider">
-              <div className="text-wrap">
-                <motion.div
-                  className="text-group"
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -20 }}
-                >
-                  <h2>Example Text</h2>
-                  <h2>Doler Sit Amet</h2>
-                  <h2>Lorem Ipsum</h2>
-                </motion.div>
-              </div>
               <div className="bullets">
                 <motion.span
                   className={`active ${activeSlide === 1 ? "active" : ""}`}
@@ -152,7 +136,6 @@ const LandingPage = () => {
                   whileHover={{ scale: 1.2 }}
                 ></motion.span>
               </div>
-            </div>
           </motion.div>
         </div>
       </div>
