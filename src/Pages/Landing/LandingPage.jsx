@@ -12,6 +12,8 @@ const LandingPage = () => {
     setActiveSlide(index);
   };
 
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
   useEffect(() => {
     const images = document.querySelectorAll(".image");
     const bullets = document.querySelectorAll(".bullets span");

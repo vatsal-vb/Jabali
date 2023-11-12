@@ -2,6 +2,9 @@ import "./404.css";
 import ghost from "../../Assets/ghost-img.png";
 
 const ErrorPage = () => {
+
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
   return (
         <div className="main2">
             <section className="home">
