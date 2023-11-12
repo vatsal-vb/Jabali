@@ -278,14 +278,11 @@ label {
         width: 100%;
         padding: 3rem 2rem;
         display: flex;
+        display: block;
     }
 
-    .images-wrapper {
-        display: none;
-    }
-
-    .text-slider {
-        width: 100%;
+    .images-wrapper img {
+        display: block;
     }
 
 }
