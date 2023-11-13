@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import './Landing.css';
-import logo from '../../Assets/Logo.png';
+import logo from '../../Assets/Logo.jpeg';
 
 const LandingPage = () => {
 
@@ -49,7 +49,6 @@ const LandingPage = () => {
         initial={{ y: -50, opacity: 0, rotate: -360, scale: 0 }}
         animate={{ y: 0, opacity: 1, rotate: 0, scale: 1 }}
         transition={{ duration: 1, ease: 'easeInOut' }}
-        whileHover={{ scale: 5, rotate: -3 }}
       />
 
       {/* Dynamic opening animation for the heading */}

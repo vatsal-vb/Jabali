@@ -2,47 +2,46 @@ main {
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
-    background-color: #e7273a;
+    background-color: #ff303c;
     padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Russo One', sans-serif;
 }
 
 
 .Logo {
-    box-shadow: 3px 5px 3px 4px rgba(0, 0, 0, 0.155);
-    border-radius: 30px;
-    margin-bottom: 2rem;
-    width: 20rem;
-    height: 20rem;
+    width: 30rem;
+    margin-bottom: 1rem;
 }
 
 .form {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    z-index: 2;
 }
 
 .Email-Form {
     width: 100%;
     height: 100%;
-    background: none;
+    background: rgba(0, 0, 0, 0.362);
     border: none;
     outline: none;
     border-bottom: 1px solid #bbb;
     padding: 10px;
     font-size: 0.95rem;
     margin-bottom: 2rem;
-    color: #151111;
+    color: #FEFEFE;
     transition: all 2s ease;
     cursor: pointer;
 }
 
 .Email-Form::placeholder {
     color: rgba(234, 225, 225, 0.313);
+    font-family: 'Russo One', sans-serif;
 }
 
 .Email-Form:focus {
@@ -79,13 +78,15 @@ main {
 
 h2 {
     font-size: 2.5rem;
-    font-weight: 600;
-    color: #151111;
+    font-weight: 400;
+    color: #FEFEFE;
     margin-bottom: 0.5rem;
+    cursor: pointer;
 }
 
 p {
-    color: #1d1c1c;
-    font-size: 0.965rem;
+    color: #FEFEFE;
+    font-size: 1rem;
     margin-bottom: 2rem;
+    cursor: pointer;
 }
