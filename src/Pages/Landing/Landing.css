@@ -68,6 +68,7 @@ main {
     font-size: 0.8rem;
     margin-bottom: 2rem;
     transition: 0.5s; 
+    font-family: 'Russo One', sans-serif;
 }
 
 .btn:hover {
