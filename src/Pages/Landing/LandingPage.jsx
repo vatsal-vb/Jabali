@@ -1,146 +1,102 @@
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import logo from "../../Assets/Logo.png";
-import image from "../../Assets/Logo.png";
-import "./Landing.css";
+import { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import './Landing.css';
+import logo from '../../Assets/Logo.png';
 
 const LandingPage = () => {
-  const [activeSlide, setActiveSlide] = useState(1);
-  const [email, setEmail] = useState("");
 
-  const handleBulletClick = (index) => {
-    setActiveSlide(index);
-  };
+  // Initialize Framer Motion controls for animations
 
-  document.addEventListener('contextmenu', event => event.preventDefault());
+  const controls = useAnimation();
+
+  // Trigger animations when the component mounts
 
   useEffect(() => {
-    const images = document.querySelectorAll(".image");
-    const bullets = document.querySelectorAll(".bullets span");
-
-    images.forEach((img, index) => {
-      if (index + 1 === activeSlide) {
-        img.classList.add("show");
-      } else {
-        img.classList.remove("show");
-      }
+    controls.start({
+      opacity: 1,
+      y: 0,
+      rotate: 0,
+      scale: 1,
+      transition: {
+        duration: 0.8,
+        type: 'spring',
+        stiffness: 120,
+        bounce: 0.4,
+      },
     });
-
-    bullets.forEach((bull, index) => {
-      if (index + 1 === activeSlide) {
-        bull.classList.add("active");
-      } else {
-        bull.classList.remove("active");
-      }
-    });
-  }, [activeSlide]);
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
+  }, [controls]);
 
   return (
-    <motion.main
-      className="main"
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -20 }}
-    >
-      <div className="box">
-        <div className="inner-box">
-          <motion.div
-            className="forms-wrap"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -50 }}
-          >
-            <form action="index.html" autoComplete="off" className="sign-in-form">
-              <div className="logo">
-                <motion.img
-                  src={logo}
-                  alt="Jabali"
-                  initial={{ opacity: 0, y: -50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -50 }}
-                />
-                <h4>Jabali</h4>
-              </div>
-              <div className="heading">
-                <h2>Jabali - Coming Soon</h2>
-                <h6>Get Notified When We Launch!</h6>
-              </div>
-              <div className="actual-form">
-                <div className="input-wrap">
-                  <input
-                    type="email"
-                    className={`input-field ${email && "active"}`}
-                    autoComplete="off"
-                    required
-                    value={email}
-                    onChange={handleEmailChange}
-                  />
-                  <label>Enter Your Email</label>
-                </div>
-                <input type="submit" value="Get Notified" className="sign-btn" />
-              </div>
-            </form>
-          </motion.div>
 
-          <motion.div
-            className="carousel"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 50 }}
-          >
-            <div className="images-wrapper">
-              <motion.img
-                src={image}
-                className="image img-1 show"
-                alt=""
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.5 }}
-              />
-              <motion.img
-                src={image}
-                className="image img-2"
-                alt=""
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.5 }}
-              />
-              <motion.img
-                src={image}
-                className="image img-3"
-                alt=""
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.5 }}
-              />
-            </div>
-              <div className="bullets">
-                <motion.span
-                  className={`active ${activeSlide === 1 ? "active" : ""}`}
-                  onClick={() => handleBulletClick(1)}
-                  data-value="1"
-                  whileHover={{ scale: 1.2 }}
-                ></motion.span>
-                <motion.span
-                  className={`active ${activeSlide === 2 ? "active" : ""}`}
-                  onClick={() => handleBulletClick(2)}
-                  data-value="2"
-                  whileHover={{ scale: 1.2 }}
-                ></motion.span>
-                <motion.span
-                  className={`active ${activeSlide === 3 ? "active" : ""}`}
-                  onClick={() => handleBulletClick(3)}
-                  data-value="3"
-                  whileHover={{ scale: 1.2 }}
-                ></motion.span>
-              </div>
-          </motion.div>
-        </div>
-      </div>
+    // Main container with animations
+
+    <motion.main
+      initial={{ opacity: 0, y: 100, rotate: -20, scale: 0.8 }}
+      animate={controls}
+      exit={{ opacity: 0 }}
+    >
+
+      {/* Custom opening animation for the logo */}
+
+      <motion.img
+        src={logo}
+        alt="Jabali Logo"
+        className="Logo"
+        initial={{ y: -50, opacity: 0, rotate: -360, scale: 0 }}
+        animate={{ y: 0, opacity: 1, rotate: 0, scale: 1 }}
+        transition={{ duration: 1, ease: 'easeInOut' }}
+        whileHover={{ scale: 5, rotate: -3 }}
+      />
+
+      {/* Dynamic opening animation for the heading */}
+      <motion.h2
+        initial={{ y: -20, opacity: 0, rotate: -30, scale: 0.8 }}
+        animate={{ y: 0, opacity: 1, rotate: 0, scale: 1 }}
+        transition={{ duration: 1, ease: 'easeInOut' }}
+        whileHover={{ scale: 1.1, rotate: 0 }}
+      >
+        Coming Soon
+      </motion.h2>
+
+      {/* Dynamic opening animation for the paragraph */}
+      <motion.p
+        initial={{ y: 20, opacity: 0, rotate: 30, scale: 0.8 }}
+        animate={{ y: 0, opacity: 1, rotate: 0, scale: 1 }}
+        transition={{ duration: 1, ease: 'easeInOut' }}
+        whileHover={{ scale: 1.1, rotate: 0 }}
+      >
+        Get Notified When We Launch!
+      </motion.p>
+
+      {/* Form container with entrance animation */}
+
+      <motion.div
+        className="form"
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+      >
+        {/* Form with email input and submit button */}
+
+        <motion.form action="">
+          <input
+            type="email"
+            autoComplete="off"
+            placeholder="Enter Your Email"
+            className="Email-Form"
+            required
+          />
+          <motion.input
+            value="Get Notified"
+            type="submit"
+            className="btn"
+
+            // Button scale and rotation animations on hover and tap
+
+            whileHover={{ scale: 1.1, rotate: 5 }}
+            whileTap={{ scale: 0.9, rotate: -5 }}
+          />
+        </motion.form>
+      </motion.div>
     </motion.main>
   );
 };
