@@ -13,7 +13,7 @@ main {
 
 
 .Logo {
-    width: 30rem;
+    width: 25rem;
     margin-bottom: 1rem;
 }
 
@@ -47,18 +47,20 @@ main {
 .Email-Form:focus {
     outline-color: transparent;
     box-shadow: 3px 5px 3px 4px rgba(0, 0, 0, 0.155);
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 20px;
     border: none;
 }
 
 .Email-Form:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 
 .btn {
     display: inline-block;
     width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
     height: 43px;
     background-color: #151111;
     color: #fff;
@@ -66,19 +68,19 @@ main {
     cursor: pointer;
     border-radius: 0.8rem;
     font-size: 0.8rem;
-    margin-bottom: 2rem;
     transition: 0.5s; 
     font-family: 'Russo One', sans-serif;
+
 }
 
 .btn:hover {
     background-color: #efefef;
     color: #151111;
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 400;
     color: #FEFEFE;
     margin-bottom: 0.5rem;
@@ -88,6 +90,6 @@ h2 {
 p {
     color: #FEFEFE;
     font-size: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     cursor: pointer;
 }

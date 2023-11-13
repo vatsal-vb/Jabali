@@ -1,20 +1,18 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import './Landing.css';
 import logo from '../../Assets/Logo.jpeg';
 
 const LandingPage = () => {
+  const [showEmailInput, setShowEmailInput] = useState(false);
 
   // Simple code snippet so no one can steal the code and assets
-
-  document.addEventListener('contextmenu', event => event.preventDefault());
+  document.addEventListener('contextmenu', (event) => event.preventDefault());
 
   // Initialize Framer Motion controls for animations
-
   const controls = useAnimation();
 
   // Trigger animations when the component mounts
-
   useEffect(() => {
     controls.start({
       opacity: 1,
@@ -30,18 +28,18 @@ const LandingPage = () => {
     });
   }, [controls]);
 
+  const handleGetNotified = () => {
+    setShowEmailInput(true);
+  };
+
   return (
-
     // Main container with animations
-
     <motion.main
       initial={{ opacity: 0, y: 100, rotate: -20, scale: 0.8 }}
       animate={controls}
       exit={{ opacity: 0 }}
     >
-
       {/* Custom opening animation for the logo */}
-
       <motion.img
         src={logo}
         alt="Jabali Logo"
@@ -72,31 +70,30 @@ const LandingPage = () => {
       </motion.p>
 
       {/* Form container with entrance animation */}
-
       <motion.div
         className="form"
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
         {/* Form with email input and submit button */}
-
         <motion.form action="">
-          <input
-            type="email"
-            autoComplete="off"
-            placeholder="Enter Your Email"
-            className="Email-Form"
-            required
-          />
+          {showEmailInput && (
+            <input
+              type="email"
+              autoComplete="off"
+              placeholder="Enter Your Email"
+              className="Email-Form"
+              required
+            />
+          )}
           <motion.input
             value="Get Notified"
             type="submit"
             className="btn"
-
             // Button scale and rotation animations on hover and tap
-
             whileHover={{ scale: 1.1, rotate: 5 }}
             whileTap={{ scale: 0.9, rotate: -5 }}
+            onClick={handleGetNotified}
           />
         </motion.form>
       </motion.div>
