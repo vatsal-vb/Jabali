@@ -40,20 +40,17 @@ const LandingPage = () => {
       exit={{ opacity: 0 }}
     >
       {/* Custom opening animation for the logo */}
-      <motion.img
+      <img
         src={logo}
         alt="Jabali Logo"
         className="Logo"
-        initial={{ y: -50, opacity: 0, rotate: -360, scale: 0 }}
-        animate={{ y: 0, opacity: 1, rotate: 0, scale: 1 }}
-        transition={{ duration: 1, ease: 'easeInOut' }}
       />
 
       {/* Dynamic opening animation for the heading */}
       <motion.h2
         initial={{ y: -20, opacity: 0, rotate: -30, scale: 0.8 }}
         animate={{ y: 0, opacity: 1, rotate: 0, scale: 1 }}
-        transition={{ duration: 1, ease: 'easeInOut' }}
+        transition={{ duration: 0.1, ease: 'easeInOut' }}
         whileHover={{ scale: 1.1, rotate: 0 }}
       >
         Coming Soon
@@ -63,7 +60,7 @@ const LandingPage = () => {
       <motion.p
         initial={{ y: 20, opacity: 0, rotate: 30, scale: 0.8 }}
         animate={{ y: 0, opacity: 1, rotate: 0, scale: 1 }}
-        transition={{ duration: 1, ease: 'easeInOut' }}
+        transition={{ duration: 0.1, ease: 'easeInOut' }}
         whileHover={{ scale: 1.1, rotate: 0 }}
       >
         Get Notified When We Launch!
