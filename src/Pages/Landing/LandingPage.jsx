@@ -5,6 +5,10 @@ import logo from '../../Assets/Logo.png';
 
 const LandingPage = () => {
 
+  // Simple code snippet so no one can steal the code and assets
+
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
   // Initialize Framer Motion controls for animations
 
   const controls = useAnimation();
