@@ -4,11 +4,3 @@
     justify-content: center;
     flex-direction: column;
 }
-
-hr {
-    width: 100%;
-    margin-top: 5rem;
-    color: #151111;
-    border-top: 6px solid #151111;
-    margin-bottom: 5rem;
-}

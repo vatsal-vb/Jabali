@@ -1,8 +1,8 @@
 .Hero {
-    margin-top: 5rem;
+    margin-top: 10rem;
     text-align: center;
     padding: 10px;
-    margin-bottom: 8rem;
+    margin-bottom: 23rem;
 }
 
 .logo {
@@ -31,5 +31,6 @@ form {
 @media (max-width: 850px) {
     .Hero {
         margin-top: 2rem;
+        margin-bottom: 20rem;
     }
 }
