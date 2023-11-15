@@ -1,0 +1,30 @@
+.Investors {
+    margin-top: 4rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.investor img {
+    width: 25rem;
+}
+
+.investors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+@media (max-width: 900px) {
+    .investors {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .investor img {
+        width: 20rem;
+    }
+}

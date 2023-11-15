@@ -1,0 +1,22 @@
+.about  {
+    padding: 50px;
+    text-align: center;
+}
+
+.about_heading {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about_text {
+    font-size: 18px;
+}
+
+@media (min-width: 1500px) {
+    .about_text {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}

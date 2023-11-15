@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import './Landing.css';
+import './ComingSoon.css';
 import logo from '../../Assets/Logo.jpeg';
 
-const LandingPage = () => {
+const ComingSoon = () => {
   const [showEmailInput, setShowEmailInput] = useState(false);
 
   // Simple code snippet so no one can steal the code and assets
@@ -98,4 +98,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default ComingSoon;

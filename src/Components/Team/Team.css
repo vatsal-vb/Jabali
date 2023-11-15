@@ -1,0 +1,35 @@
+.Team {
+    padding: 20px;
+    text-align: center;
+}
+
+.team_members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.member {
+    text-align: center;
+}
+
+.member_pfp {
+    border-radius: 50%;
+    width: 20rem;
+    margin-bottom: 10px;
+}
+
+.member_name {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.heading {
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .team_members {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

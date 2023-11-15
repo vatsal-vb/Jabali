@@ -14,4 +14,41 @@
 body,
 input {
     font-family: "Poppins", sans-serif;
+    background-color: #ff303c;
+}
+
+/* ======= NavBar ======= */
+
+header {
+    background-color: transparent;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_items {
+    background: transparent;
+    display: flex; 
+    flex-direction: row;
+}
+
+.nav_items li {
+    list-style: none;
+    margin: 0 10px;
+    transition: .5s ease-in-out;
+}
+
+.nav_items a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: .5s ease-in-out;
+}
+
+.nav_items li:hover a {
+    color: rgb(244, 164, 35);
+    transform: translateY(-5px);
+}
+
+.nav_items li:hover {
+    transform: translateY(-5px);
 }
