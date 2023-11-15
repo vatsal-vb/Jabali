@@ -2,11 +2,23 @@
     "rewrites": [
       {
         "source": "/",
-        "destination": "./src/Pages/Landing/LandingPage.jsx"
+        "destination": "./src/Pages/LandingPage/Landing.jsx"
       },
       {
         "source": "/404",
         "destination": "./src/Pages/404-Page/404.jsx"
+      },
+      {
+        "source": "/coming-soon",
+        "destination": "./src/Pages/Coming-Soon/ComingSoon.jsx"
+      },
+      {
+        "source": "/blog",
+        "destination": "./src/Pages/Blog/Blog.jsx"
+      },
+      {
+        "source": "/career",
+        "destination": "./src/Pages/Career/Career.jsx"
       },
       {
         "source": "/(.*)",

@@ -1,0 +1,25 @@
+.blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20rem;
+    align-content: center;
+    align-self: center;
+    justify-self: center;
+    text-justify: center;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .blog {
+        margin-top: 5rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+}

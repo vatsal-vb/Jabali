@@ -1,0 +1,14 @@
+.career {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+#btn {
+    margin-top: 2rem;
+    width: 200px;
+    text-align: center;
+}
