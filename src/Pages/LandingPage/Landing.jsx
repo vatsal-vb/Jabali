@@ -23,7 +23,7 @@ const Landing = () => {
 
        <Investor />
 
-       {/* <Footer /> */}
+       <Footer />
 
 
     </div>

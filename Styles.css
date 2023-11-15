@@ -28,7 +28,7 @@ header {
 
 .nav_items {
     background: transparent;
-    display: flex; 
+    display: flex;
     flex-direction: row;
 }
 
@@ -51,4 +51,51 @@ header {
 
 .nav_items li:hover {
     transform: translateY(-5px);
+}
+
+/* Footer */
+
+footer {
+    padding: 32px;
+    width: 100%;
+    background: #262628;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+footer li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    transition: .5s;
+}
+
+.footer-icons a {
+    background-color: rgb(238, 59, 35);
+    color: #151111;
+    padding: 15px;
+    border-radius: 100px;
+    display: flex;
+    font-size: 25px;
+    transition: .5s;
+}
+
+.footer-icons a:hover {
+    background-color: rgb(210, 102, 35);
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 100px;
+    display: flex;
+    font-size: 25px;
+}
+
+.footer-menu a {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    transition: .5s;
+}
+
+.footer-menu a:hover {
+    color: rgb(181, 22, 22);
 }

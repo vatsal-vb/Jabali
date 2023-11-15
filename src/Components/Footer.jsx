@@ -3,12 +3,14 @@
 const Footer = () => {
   return (
     <footer>
-
-        <p> Contact Us </p>
-
-        <a href="mailto:contact@jabali.ai">contact@jabali.ai</a>
-
-    </footer>
+    <ul className="footer-icons">
+      <li><a href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a></li>
+      <li><a href="https://linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+    </ul>
+    <ul className="footer-menu">
+      <li><a href="mailto:contact@jabali.ai"> Contact Us </a></li>
+    </ul>
+  </footer>
   )
 }
 
