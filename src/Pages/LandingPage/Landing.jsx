@@ -11,15 +11,9 @@ const Landing = () => {
 
        <Hero />
 
-       <hr />
-
        <About />
 
-       <hr />
-
        <Team />
-
-       <hr />
 
        <Investor />
 

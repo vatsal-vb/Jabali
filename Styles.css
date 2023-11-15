@@ -23,13 +23,14 @@ header {
     background-color: transparent;
     padding: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .nav_items {
     background: transparent;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
 }
 
 .nav_items li {
