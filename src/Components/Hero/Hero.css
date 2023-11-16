@@ -16,6 +16,7 @@
 }
 
 .tagline {
+    margin-top: 1.2rem;
     font-size: 50px;
     color: #fff;
     font-weight: 500;
@@ -66,6 +67,6 @@ form {
 
 @media (max-height: 1440px) {
     .Hero {
-        margin-top: 5rem;
+        margin-top: 3.5rem;
     }
 }
