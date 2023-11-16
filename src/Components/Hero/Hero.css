@@ -43,3 +43,23 @@ form {
         margin-bottom: 17rem;
     }
 }
+
+@media (max-width: 800px ) {
+    .logo {
+        width: 350px;
+    }
+    .tagline {
+        font-size: 35px;
+        color: #fff;
+        font-weight: 500;
+        line-height: 60.25px;
+    }
+    #btn {
+        width: 200px;
+        height: 45px; 
+    }
+    form {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}

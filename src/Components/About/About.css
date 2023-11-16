@@ -4,7 +4,7 @@
     margin-bottom: 5rem;
 }
 
-.heading {
+.heading-about {
     color: #ffffff;
     font-family: "Russo One", Helvetica;
     font-size: 40px;
@@ -43,6 +43,20 @@
 @media (min-width: 1500px) {
     .text-container {
         flex-direction: row;
-        padding: 0 2rem; /* Adjust the padding as needed */
+        padding: 0 2rem; 
+    }
+}
+
+@media ( max-width: 800px ) {
+    .heading-about {
+        text-align: start;
+        font-size: 28px;
+    }
+    .text-container  {
+        padding: 0 0;
+        font-size: 18px;
+    }
+    .text-container p  {
+        font-size: 18px;
     }
 }
