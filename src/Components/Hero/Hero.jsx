@@ -15,10 +15,11 @@ const Hero = () => {
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Example Tagline"],
-      typeSpeed: 200,
-      backSpeed: 200,
+      strings: ["Your Imagination, Our Engine"],
+      typeSpeed: 80,
+      backSpeed: 100,
       loop: true,
+      showCursor: false
     });
 
     return () => {

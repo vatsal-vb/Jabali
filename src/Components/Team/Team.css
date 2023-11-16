@@ -12,12 +12,18 @@
 
 .member {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .member_pfp {
     border-radius: 50%;
     width: 20rem;
     margin-bottom: 10px;
+    width: 124px;
+    height: 124px;
 }
 
 .member_name {
@@ -27,6 +33,7 @@
 
 .heading {
     color: #fff;
+    font-size: 3rem;
 }
 
 @media (max-width: 900px) {
