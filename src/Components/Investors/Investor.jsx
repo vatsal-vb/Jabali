@@ -1,5 +1,5 @@
 import "./Investor.css";
-import logo from "../../Assets/Logo.jpeg"
+import logo from "../../Assets/Logo.jpeg";
 
 const Investor = () => {
   return (
