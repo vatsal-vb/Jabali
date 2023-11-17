@@ -55,15 +55,14 @@ form {
         font-size: 35px;
         color: #fff;
         font-weight: 500;
-        line-height: 60.25px;
-        height: 60.25px; 
+        line-height: 1;
+        height: 115px; 
     }
     #btn {
         width: 200px;
         height: 45px; 
     }
     form {
-        margin-top: 1rem;
         margin-bottom: 1rem;
     }
 }
