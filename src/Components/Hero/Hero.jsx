@@ -16,8 +16,8 @@ const Hero = () => {
   React.useEffect(() => {
     const typed = new Typed(el.current, {
       strings: ["Your Imagination, Our Engine"],
-      typeSpeed: 80,
-      backSpeed: 100,
+      typeSpeed: 30,
+      backSpeed: 60,
       loop: true,
       showCursor: false
     });

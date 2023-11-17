@@ -14,7 +14,7 @@
 body,
 input {
     font-family: "Poppins", sans-serif;
-    background-color: #ff303c;
+    background-color: #ff2b3e;
 }
 
 /* ======= NavBar ======= */
@@ -54,7 +54,7 @@ header {
   }
 
 .nav_items li:hover a {
-    color: rgb(244, 164, 35);
+    color: rgb(255, 255, 255);
     transform: translateY(-5px);
 }
 

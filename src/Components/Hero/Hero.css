@@ -1,8 +1,8 @@
 .Hero {
-    margin-top: 10rem;
+    margin-top: 1rem;
     text-align: center;
     padding: 10px;
-    margin-bottom: 15.5rem;
+    margin-bottom: 16rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -21,6 +21,9 @@
     color: #fff;
     font-weight: 500;
     line-height: 60.25px;
+    height: 60.25px;
+    overflow: hidden; 
+
 }
 
 #btn {
@@ -30,7 +33,6 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
 }
-
 
 form {
     margin-top: 1.895rem;
@@ -54,6 +56,7 @@ form {
         color: #fff;
         font-weight: 500;
         line-height: 60.25px;
+        height: 60.25px; 
     }
     #btn {
         width: 200px;
@@ -67,6 +70,6 @@ form {
 
 @media (max-height: 1440px) {
     .Hero {
-        margin-top: 3.5rem;
+        margin-top: 3rem;
     }
 }
