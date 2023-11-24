@@ -43,3 +43,30 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+.paragraph {
+    color: #ffffff;
+    font-family: "Montserrat", Helvetica;
+    font-size: 23px;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.additional-paragraph {
+    color: #ffffff;
+    font-family: "Montserrat", Helvetica;
+    font-size: 23px;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: normal;
+
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem; 
+    gap: 20px;
+}
+
+
