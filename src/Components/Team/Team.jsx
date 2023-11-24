@@ -47,7 +47,9 @@ const Team = () => {
                 
                     <p className="paragraph">
                         
-                    Jabali’s founder & CEO Vatsal Bhardwaj,  has a unique background and deep domain expertise in video games having served as an CPO at Skillz, GM & Director of Game Tech at AWS, Product lead at Oculus and GM & Head of Studios for Storm8 games. His products have generated billions of dollars in revenue and reached over a billion players. 
+                    Jabali’s founder & CEO  <a href="http://www.linkedin.com/in/vatsal"> Vatsal Bhardwaj </a>,  has a unique background and deep domain expertise in video games having served as an CPO at Skillz, GM & Director of Game Tech at AWS, Product lead at Oculus and GM & Head of Studios for Storm8 games. His products have generated billions of dollars in revenue and reached over a billion players. 
+
+                      
 
                     </p>
 
