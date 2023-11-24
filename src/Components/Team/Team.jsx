@@ -54,8 +54,6 @@ const Team = () => {
                         </p>
 
 The rest of the founding team includes software engineering and design with an expertise in developing AI/ML, video games, gaming services, and cloud computing. 
-
-                </p>
         
             </div>
 
