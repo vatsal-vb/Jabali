@@ -13,7 +13,7 @@ const Team = () => {
             id: 2,
             name: 'Arnav Jhala',
             role: 'Co-Founder and Chief Scientist',
-            image: 'https://images.unsplash.com/photo-1514222709107-a180c68d72b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80',
+            image: 'https://media.licdn.com/dms/image/D5603AQHnsSFf7hdJ4g/profile-displayphoto-shrink_800_800/0/1682338980813?e=1706140800&v=beta&t=J6PJ6RkTxU2typskJZB0y-6b3SUfXtlyJzwGzqSIrfw&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80',
         },
     ];
 
