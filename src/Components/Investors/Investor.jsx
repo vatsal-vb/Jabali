@@ -7,25 +7,6 @@ const Investor = () => {
 
         <h2 className="heading">Investors</h2>
 
-      /*
-        <div className="investors">
-
-            <div className="investor">
-                <img src={logo} alt="" className="investor_logo"/>
-            </div>
-
-            <div className="investor">
-                <img src={logo} alt="" className="investor_logo"/>
-            </div>
-
-            <div className="investor">
-                <img src={logo} alt="" className="investor_logo"/>
-            </div>
-
-        </div>
-
-      */
-
     </div>
   )
 }
