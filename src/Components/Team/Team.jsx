@@ -7,7 +7,7 @@ const Team = () => {
             id: 1,
             name: 'Vatsal Bhardwaj',
             role: 'Founder and CEO',
-            image: 'https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80',
+            image: 'https://media.licdn.com/dms/image/D5603AQEtM2f5DaFZJw/profile-displayphoto-shrink_800_800/0/1672973180740?e=1706140800&v=beta&t=ufoil8p1MgLo1JM0vGLEOzBYltRhQeYCh_xhs2bK7_8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80',
         },
         {
             id: 2,
