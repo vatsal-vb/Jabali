@@ -55,7 +55,7 @@ const Team = () => {
 
     
                 <p className="additional-paragraph">
-                    Dr. Arnav Jhala, Co-founder has been on the forefront of AI and Video games research for the last 15 years including 100+ publications in AAAI, IEEE and numerous grants from NSF, DARPA and various leading game companies. Dr. Jhala is also the Director of Digital games research initiative and Visual narrative cluster. 
+                   <a href="http://www.linkedin.com/in/arnav"> Dr. Arnav Jhala </a>, Co-founder & Chief Scientist has been on the forefront of AI and Video games research for the last 15 years including 100+ publications in AAAI, IEEE and numerous grants from NSF, DARPA and various leading game companies. Dr. Jhala is also the Director of Digital games research initiative and Visual narrative cluster. 
                 </p>
             </div>
 

@@ -1,14 +1,41 @@
 import React, { useState } from "react";
 import Typed from "typed.js";
+import axios from "axios"; 
+
 import logo from "../../Assets/Logo.jpeg";
 import "./Hero.css";
 
 const Hero = () => {
-
   const [showEmailInput, setShowEmailInput] = useState(false);
 
-  const handleGetNotified = () => {
-    setShowEmailInput(true);
+  const handleGetNotified = async (e) => {
+    e.preventDefault();
+
+    const emailInput = document.getElementById("email-input");
+    const email = emailInput.value;
+
+    // Replace 'YOUR_MAILCHIMP_API_KEY' and 'YOUR_MAILCHIMP_AUDIENCE_ID' with your actual Mailchimp API key and audience ID
+    const apiUrl = `https://<YOUR_MAILCHIMP_SERVER_PREFIX>.api.mailchimp.com/3.0/lists/YOUR_MAILCHIMP_AUDIENCE_ID/members`;
+
+    try {
+      const response = await axios.post(
+        apiUrl,
+        {
+          email_address: email,
+          status: "subscribed",
+        },
+        {
+          headers: {
+            Authorization: "Bearer YOUR_MAILCHIMP_API_KEY",
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      console.log("Mailchimp response:", response.data);
+    } catch (error) {
+      console.error("Error subscribing to Mailchimp:", error.response.data);
+    }
   };
 
   const el = React.useRef(null);
@@ -19,7 +46,7 @@ const Hero = () => {
       typeSpeed: 30,
       backSpeed: 60,
       loop: true,
-      showCursor: false
+      showCursor: false,
     });
 
     return () => {
@@ -29,12 +56,11 @@ const Hero = () => {
 
   return (
     <div className="Hero">
-
       <img src={logo} alt="logo" className="logo" />
 
       <span className="tagline" ref={el} />
 
-      <form action="">
+      <form action="" onSubmit={handleGetNotified}>
         {showEmailInput && (
           <input
             type="email"
@@ -42,19 +68,19 @@ const Hero = () => {
             placeholder="Enter Your Email"
             className="Email-Form"
             required
+            id="email-input"
           />
         )}
         <input
           value="Get in Touch"
           type="submit"
           className="btn"
-          onClick={handleGetNotified}
+          onClick={() => setShowEmailInput(true)}
           id="btn"
         />
       </form>
-
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
