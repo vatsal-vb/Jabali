@@ -3,7 +3,7 @@ import "./About.css";
 const About = () => {
     return (
         <div className="about-container">
-            <div className="heading-about">About Us</div>
+            <div className="heading-about">Mission</div>
             <div className="text-container">
                 <p className="paragraph">
                    Video games is a massive industry with $200B+ in revenues and more than 3.5B players. Over the last decades, the industry has grown and evolved through technological advances, including the shift to mobile, cloud computing, and new business and distribution models. 
