@@ -8,7 +8,7 @@ const Investor = () => {
         <h2 className="heading">Investors</h2>
 
        <p className="additional-paragraph">
-                    We are well funded by top-tier investors from Silicon Valley and Europe.
+                    We are well funded. Our investors include top-tier VCs from Silicon Valley/Europe and angels from Meta, Amazon, Google, and Open AI. 
                 </p>
 
     </div>
