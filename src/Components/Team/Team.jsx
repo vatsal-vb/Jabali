@@ -52,9 +52,9 @@ const Team = () => {
                         Dr. Arnav Jhala, Co-founder has been on the forefront of AI and Video games research for the last 15 years including 100+ publications in AAAI, IEEE and numerous grants from NSF, DARPA and various leading game companies. Dr. Jhala is also the Director of Digital games research initiative and Visual narrative cluster. 
 
                         </p>
-
+<p className="paragraph">
 The rest of the founding team includes software engineering and design with an expertise in developing AI/ML, video games, gaming services, and cloud computing. 
-        
+        </p>
             </div>
 
 
