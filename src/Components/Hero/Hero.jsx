@@ -14,8 +14,7 @@ const Hero = () => {
     const emailInput = document.getElementById("email-input");
     const email = emailInput.value;
 
-    // Replace'YOUR_MAILCHIMP_AUDIENCE_ID' with your actual Mailchimp API key and audience ID
-    const apiUrl = `https://us12.api.mailchimp.com/3.0/lists/YOUR_MAILCHIMP_AUDIENCE_ID/members`;
+    const apiUrl = `https://us12.api.mailchimp.com/3.0/lists/e2b0670fef/members`;
 
     try {
       const response = await axios.post(
