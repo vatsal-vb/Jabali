@@ -7,7 +7,9 @@
 .team_members {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    margin-left: 35rem;
+    margin-right: 35rem;
+    margin-bottom: 30px;
 }
 
 .member {
@@ -41,7 +43,16 @@
 @media (max-width: 900px) {
     .team_members {
         grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 3rem;
+        margin-right: 0;
+        margin-left: 0;
     }
+
+    .heading {
+        color: #fff;
+        font-size: 2rem;
+    }
+
 }
 .paragraph {
     color: #ffffff;
