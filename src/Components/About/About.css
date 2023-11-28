@@ -50,8 +50,8 @@
 
 @media ( max-width: 800px ) {
     .heading-about {
-        text-align: start;
-        font-size: 28px;
+        text-align: center;
+        font-size: 40px;
     }
     .text-container  {
         padding: 0 0;

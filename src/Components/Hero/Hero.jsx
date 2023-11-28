@@ -29,23 +29,7 @@ const Hero = () => {
       <span className="tagline" ref={el} />
 
       <form>
-        {showEmailInput && (
-          <input
-            type="email"
-            autoComplete="off"
-            placeholder="Enter Your Email"
-            className="Email-Form"
-            required
-            id="email-input"
-          />
-        )}
-        <input
-          type="submit"
-          value="Get in Touch"
-          className="btn"
-          onClick={() => setShowEmailInput(true)}
-          id="btn"
-        />
+        <button className="input btn" id="btn"><a href="mailto:contact@jabali.ai">Get in touch</a></button>
       </form>
     </div>
   );
