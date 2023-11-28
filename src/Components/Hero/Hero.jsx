@@ -1,45 +1,14 @@
-import React, { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Typed from "typed.js";
-import axios from "axios"; 
-
 import logo from "../../Assets/Logo.jpeg";
 import "./Hero.css";
 
 const Hero = () => {
   const [showEmailInput, setShowEmailInput] = useState(false);
 
-  const handleGetNotified = async (e) => {
-    e.preventDefault();
+  const el = useRef(null);
 
-    const emailInput = document.getElementById("email-input");
-    const email = emailInput.value;
-
-    const apiUrl = `https://us12.api.mailchimp.com/3.0/lists/e2b0670fef/members`;
-
-    try {
-      const response = await axios.post(
-        apiUrl,
-        {
-          email_address: email,
-          status: "subscribed",
-        },
-        {
-          headers: {
-            Authorization: "Bearer 15fa0a44a9d3f638c5ab15d057e60f1b-us12",
-            "Content-Type": "application/json",
-          },
-        }
-      );
-
-      console.log("Mailchimp response:", response.data);
-    } catch (error) {
-      console.error("Error subscribing to Mailchimp:", error.response.data);
-    }
-  };
-
-  const el = React.useRef(null);
-
-  React.useEffect(() => {
+  useEffect(() => {
     const typed = new Typed(el.current, {
       strings: ["Your Imagination, Our Engine"],
       typeSpeed: 30,
@@ -59,7 +28,7 @@ const Hero = () => {
 
       <span className="tagline" ref={el} />
 
-      <form action="" onSubmit={handleGetNotified}>
+      <form>
         {showEmailInput && (
           <input
             type="email"
@@ -71,8 +40,8 @@ const Hero = () => {
           />
         )}
         <input
-          value="Get in Touch"
           type="submit"
+          value="Get in Touch"
           className="btn"
           onClick={() => setShowEmailInput(true)}
           id="btn"
