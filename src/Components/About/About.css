@@ -39,6 +39,7 @@
     flex-direction: column;
     padding: 0 2rem; 
     gap: 20px;
+    text-align: center;
 }
 
 @media (min-width: 1500px) {
@@ -56,6 +57,7 @@
     .text-container  {
         padding: 0 0;
         font-size: 18px;
+        text-align: center;
     }
     .text-container p  {
         font-size: 18px;
